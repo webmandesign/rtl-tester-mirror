@@ -1,5 +1,16 @@
 # WebMan RTL Tester Mirror Changelog
 
+## 1.0.5, 20241003
+
+### Fixed
+- Removing obsolete `load_plugin_textdomain()`
+
+### File updates
+	rtl-tester-mirror.php
+	changelog.md
+	readme.txt
+
+
 ## 1.0.4
 
 * **Fix**: Fixing texts

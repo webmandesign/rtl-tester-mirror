@@ -1,14 +1,16 @@
 === RTL Tester Mirror by WebMan ===
+
 Contributors:      webmandesign
-Donate link:       http://www.webmandesign.eu/
-Author URI:        http://www.webmandesign.eu/
-Plugin URI:        http://www.webmandesign.eu/
-Requires at least: 4.3
-Tested up to:      4.4.2
-Stable tag:        1.0.4
-License:           GNU General Public License v3
+Donate link:       https://www.webmandesign.eu/contact/#donation
+Author URI:        https://www.webmandesign.eu/
+Plugin URI:        https://www.webmandesign.eu/portfolio/rtl-tester-mirror-wordpress-plugin/
+Requires at least: 6.0
+Tested up to:      6.7
+Requires PHP:      7.0
+Stable tag:        1.0.5
+License:           GPL-3.0-or-later
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
-Tags:              webman, rtl, right to left, ltr, left to right, layout, testing, mirror, turn, transform
+Tags:              rtl, ltr, testing, mirror, transform
 
 Makes it easy for LTR language speaker to test the RTL website layout by mirroring it so it looks like LTR.
 

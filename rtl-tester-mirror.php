@@ -1,30 +1,26 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 /**
- * WebMan RTL Tester Mirror
+ * Plugin Name:  RTL Tester Mirror by WebMan
+ * Plugin URI:   https://www.webmandesign.eu/portfolio/rtl-tester-mirror-wordpress-plugin/
+ * Description:  Makes it easy for LTR language speaker to test the RTL website layout by mirroring it with CSS transform so it looks like LTR. Works great with RTL Tester plugin.
+ * Version:      1.0.5
+ * Author:       WebMan Design, Oliver Juhas
+ * Author URI:   https://www.webmandesign.eu/
+ * License:      GPL-3.0-or-later
+ * License URI:  http://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain:  rtl-tester-mirror
+ * Domain Path:  /languages
  *
- * @package    WebMan RTL Tester Mirror
+ * Requires PHP:       7.0
+ * Requires at least:  6.0
+ *
  * @copyright  WebMan Design, Oliver Juhas
  * @license    GPL-3.0, http://www.gnu.org/licenses/gpl-3.0.html
  *
  * @link  http://www.webmandesign.eu
  *
- * Plugin Name:        RTL Tester Mirror by WebMan
- * Plugin URI:         http://www.webmandesign.eu/
- * Description:        Makes it easy for LTR language speaker to test the RTL website layout by mirroring it with CSS transform so it looks like LTR. Works great with RTL Tester plugin.
- * Version:            1.0.4
- * Author:             WebMan Design, Oliver Juhas
- * Author URI:         http://www.webmandesign.eu/
- * Text Domain:        rtl-tester-mirror
- * Domain Path:        /languages
- * License:            GNU General Public License v3
- * License URI:        http://www.gnu.org/licenses/gpl-3.0.txt
- * Requires at least:  4.3
- * Tested up to:       4.4.2
+ * @package  WebMan RTL Tester Mirror
  */
-
-
-
-
 
 /**
  * Mirror the RTL site
@@ -89,21 +85,3 @@ function rtl_tester_mirror_styles() {
 
 add_action( 'wp_head',            'rtl_tester_mirror_styles', 9999 );
 add_action( 'admin_print_styles', 'rtl_tester_mirror_styles', 9999 );
-
-
-
-/**
- * Load plugin text domain
- *
- * @since    1.0.3
- * @version  1.0.3
- */
-function rtl_tester_mirror_load_plugin_textdomain() {
-
-	// Processing
-
-		load_plugin_textdomain( 'rtl-tester-mirror', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
-
-} // /rtl_tester_mirror_load_plugin_textdomain
-
-add_action( 'plugins_loaded', 'rtl_tester_mirror_load_plugin_textdomain' );
